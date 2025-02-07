@@ -29,14 +29,37 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 1️⃣ Clone o repositório  
 ```sh
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+2️⃣ Configure as variáveis de ambiente (caso necessário)
 
-Configure as variáveis de ambiente (caso necessário)
+3️⃣ Execute o projeto via Maven
 
-Execute o projeto via Maven
+sh
+Copiar
+Editar
 mvn spring-boot:run
+4️⃣ A API estará rodando em:
 
-A API estará rodando em:
+arduino
+Copiar
+Editar
 http://localhost:8080
+🐳 Rodando com Docker
+Se quiser rodar a aplicação em um container Docker:
+
+sh
+Copiar
+Editar
+docker build -t meu-projeto .
+docker run -p 8080:8080 meu-projeto
+🌎 Deploy no Render
+A aplicação foi testada no Render, um serviço de deploy simples e eficiente.
+
+Caso queira testar, basta acessar:
+
+arduino
+Copiar
+Editar
+https://sua-api.render.com
+📝 Contribuição
+Se quiser contribuir, fique à vontade! Abra uma Issue ou envie um Pull Request.
 
